@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Weather in {{city}}{% endblock %}
+
+{% block content %}
+    <h1>Weather is {{mWeather}} in {{city}}</h1>
+    <h2>{{deWeather}}  | ({{lat}}, {{lon}})</h2>
+    <br>
+    <p>Temperature is {{temp}}, but feels like {{feelTemp}}</p>
+
+    <form method="post">
+        <input type="submit" value="Mail?"></input>
+    </form>
+
+    <br><br><br><br><h1>Full Data:</h1>{{data}}
+{% endblock %}
