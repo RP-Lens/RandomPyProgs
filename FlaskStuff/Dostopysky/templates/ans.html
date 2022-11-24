@@ -1,0 +1,17 @@
+{% extends "ansBase.html" %}
+{% block title %}{{info}}{% endblock %}
+
+{% for i in range(4) %}
+    {% block i %}
+        {% for j in range(4) %}
+            {% if ans[i][j] %}
+                <p>1</p>
+            {% else %}
+                <p>0</p>
+            {% endif %}
+        {% endfor %}
+    {% endblock %}
+{% endfor %}
+
+
+
